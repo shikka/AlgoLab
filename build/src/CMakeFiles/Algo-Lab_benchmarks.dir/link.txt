@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/Algo-Lab_benchmarks.dir/main.cpp.o  -o Algo-Lab_benchmarks -rdynamic 
