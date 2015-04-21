@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/src/benchmarks/../algorithms/insertionsort.h
+array
+-
+
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/src/benchmarks/benchmark.h
+iostream
+-
+fstream
+-
+array
+-
+string
+-
+map
+-
+functional
+-
+vector
+-
+chrono
+-
+dataset.h
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/src/benchmarks/dataset.h
+../algorithms/insertionsort.h
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/src/benchmarks/../algorithms/insertionsort.h
+
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/src/benchmarks/dataset.h
+random
+-
+vector
+-
+
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/src/main.cpp
+benchmarks/benchmark.h
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/src/benchmarks/benchmark.h
+

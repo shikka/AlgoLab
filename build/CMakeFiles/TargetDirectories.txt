@@ -1,0 +1,4 @@
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/build/src/CMakeFiles/Algo-Lab_benchmarks.dir
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/build/src/CMakeFiles/Algo-Lab_tests.dir
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/build/thirdparty/gtest-1.7.0/CMakeFiles/gtest.dir
+/home/shikka/Studium/master/2.Semester/Labor Algorithmen/Labor/build/thirdparty/gtest-1.7.0/CMakeFiles/gtest_main.dir
