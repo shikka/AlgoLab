@@ -47,6 +47,12 @@ namespace Benchmark{
 		sfv= { {"Insertionsort",Insertionsort::normal<T,S>},
 				{"Insertionsort with Guard",Insertionsort::withGuardCacheMiss<T,S>},
 				{"Insertionsort with Guard (Cache optimized)",Insertionsort::withGuardCacheOp<T,S>},
+				{"Mergesort Bottom-Up",Mergesort::bottomUp<T,S>},
+				{"Mergesort Natural",Mergesort::natural<T,S>},
+				{"Quicksort",Quicksort::quicksort<T,S>},
+				{"Quicksort Hybrid IF",Quicksort::hybridIf<T,S>},
+				{"Quicksort Hybrid Else",Quicksort::hybridElse<T,S>},
+				{"Heapsort Bottom-Up",Heapsort::heapsort<T,S>},
 			};
 
 		auto aAsc = new std::array<T, S>;
@@ -66,7 +72,7 @@ namespace Benchmark{
 			for(auto sf : sfv){
 				if(!((sf.first == "Insertionsort" ||
 				sf.first == "Insertionsort with Guard" ||
-				sf.first == "Insertionsort with Guard (Cache optimized)") && S > 640000)){
+				sf.first == "Insertionsort with Guard (Cache optimized)") && S > 640000)){ //640000
 					auto cp = new std::array<T, S>(arr.first);
 					auto time = stoptime(sf.second,*cp);
 					std::cout << " " << sf.first << ": " << time.count() << std::endl;
@@ -114,7 +120,7 @@ namespace Benchmark{
 	}
 
 	void benchmark(){
-		const size_t iterations = 11;
+		const size_t iterations = 12;
 		benchmarkdataset data;
 		benchmarkIterator<double,iterations>(data);
 		printCSV(data,iterations);

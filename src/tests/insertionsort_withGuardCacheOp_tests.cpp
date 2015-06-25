@@ -7,65 +7,65 @@
 
 namespace Insertionsort{
 
-    TEST(Insertionsort_normal, AscInt){
+    TEST(Insertionsort_withGuardCacheOp, AscInt){
 		std::array<int ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		withGuardCacheOp(a);
 		isSorted(a);
 	}
 	
-	TEST(Insertionsort_normal, DescInt){
+	TEST(Insertionsort_withGuardCacheOp, DescInt){
 		std::array<int ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		withGuardCacheOp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomInt){
+	TEST(Insertionsort_withGuardCacheOp, RandomInt){
 		std::array<int ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		withGuardCacheOp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, AscDouble){
+	TEST(Insertionsort_withGuardCacheOp, AscDouble){
 		std::array<double ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		withGuardCacheOp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, DescDouble){
+	TEST(Insertionsort_withGuardCacheOp, DescDouble){
 		std::array<double ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		withGuardCacheOp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomDouble){
+	TEST(Insertionsort_withGuardCacheOp, RandomDouble){
 		std::array<double ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		withGuardCacheOp(a);
 		isSorted(a);
 	}
-	TEST(Insertionsort_normal, AscString){
+	TEST(Insertionsort_withGuardCacheOp, AscString){
 		std::array<std::string ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		withGuardCacheOp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, DescString){
+	TEST(Insertionsort_withGuardCacheOp, DescString){
 		std::array<std::string ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		withGuardCacheOp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomString){
+	TEST(Insertionsort_withGuardCacheOp, RandomString){
 		std::array<std::string ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		withGuardCacheOp(a);
 		isSorted(a);
 	}
     

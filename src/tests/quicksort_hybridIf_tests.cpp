@@ -1,70 +1,72 @@
 #include <gtest/gtest.h>
 #include <string>
-#include "../algorithms/insertionsort.hpp"
+#include "../algorithms/algorithms.hpp"
 #include "../benchmarks/dataset.hpp"
-#include "../testUtils.hpp"
+#include "testCases.hpp"
 
-namespace Insertionsort{
+
+namespace Quicksort{
+
+    TEST(Quicksort_hybridIf, AscInt){
+		std::array<int ,arraySize> a;
+		Dataset::ascArray(a);
+		hybridIf(a);
+		isSorted(a);
+	}
 	
-	TEST(Insertionsort_withGuardCacheOp, AscInt){
-		std::array<int ,arraySize> a;
-		Dataset::ascArray(a);
-		normal(a);
-		isSorted(a);
-	}
-	
-	TEST(Insertionsort_withGuardCacheOp, DescInt){
+	TEST(Quicksort_hybridIf, DescInt){
 		std::array<int ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		hybridIf(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_withGuardCacheOp, RandomInt){
+	TEST(Quicksort_hybridIf, RandomInt){
 		std::array<int ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		hybridIf(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_withGuardCacheOp, AscDouble){
+	TEST(Quicksort_hybridIf, AscDouble){
 		std::array<double ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		hybridIf(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_withGuardCacheOp, DescDouble){
+	TEST(Quicksort_hybridIf, DescDouble){
 		std::array<double ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		hybridIf(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_withGuardCacheOp, RandomDouble){
+	TEST(Quicksort_hybridIf, RandomDouble){
 		std::array<double ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		hybridIf(a);
 		isSorted(a);
 	}
-	TEST(Insertionsort_withGuardCacheOp, AscString){
+	TEST(Quicksort_hybridIf, AscString){
 		std::array<std::string ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		hybridIf(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_withGuardCacheOp, DescString){
+	TEST(Quicksort_hybridIf, DescString){
 		std::array<std::string ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		hybridIf(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_withGuardCacheOp, RandomString){
+	TEST(Quicksort_hybridIf, RandomString){
 		std::array<std::string ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		hybridIf(a);
 		isSorted(a);
 	}
+    
 }

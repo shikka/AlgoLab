@@ -5,67 +5,67 @@
 #include "testCases.hpp"
 
 
-namespace Insertionsort{
+namespace Quicksort{
 
-    TEST(Insertionsort_normal, AscInt){
+    TEST(Quicksort_quicksort, AscInt){
 		std::array<int ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		quicksort(a);
 		isSorted(a);
 	}
 	
-	TEST(Insertionsort_normal, DescInt){
+	TEST(Quicksort_quicksort, DescInt){
 		std::array<int ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		quicksort(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomInt){
+	TEST(Quicksort_quicksort, RandomInt){
 		std::array<int ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		quicksort(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, AscDouble){
+	TEST(Quicksort_quicksort, AscDouble){
 		std::array<double ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		quicksort(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, DescDouble){
+	TEST(Quicksort_quicksort, DescDouble){
 		std::array<double ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		quicksort(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomDouble){
+	TEST(Quicksort_quicksort, RandomDouble){
 		std::array<double ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		quicksort(a);
 		isSorted(a);
 	}
-	TEST(Insertionsort_normal, AscString){
+	TEST(Quicksort_quicksort, AscString){
 		std::array<std::string ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		quicksort(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, DescString){
+	TEST(Quicksort_quicksort, DescString){
 		std::array<std::string ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		quicksort(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomString){
+	TEST(Quicksort_quicksort, RandomString){
 		std::array<std::string ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		quicksort(a);
 		isSorted(a);
 	}
     

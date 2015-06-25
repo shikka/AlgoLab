@@ -65,5 +65,34 @@ namespace Insertionsort{
 			}
 		}
 	}
+
+	template <typename T, size_t SIZE>
+	void inBound(std::array<T,SIZE> &a, size_t leftBound, size_t rightBound){
+ 		//search for min from smallest to highest Index (cache optimized)
+ 		size_t i,j;
+
+        j = leftBound;
+        for(i = leftBound+1 ; i <= rightBound ; i++){
+            if(a[j] > a[i]){
+                j = i;
+            }
+        }
+        
+        if(j != leftBound){
+        	std::swap(a[leftBound],a[j]);
+        }
+
+        for(i = leftBound+1 ; i <= rightBound ; i++){
+            T t = a[i];
+            for(j = i ; t < a[j-1]; j-- ){
+
+                a[j] = a[j-1];
+                a[j-1] = t;
+            }
+        }
+	}
 	
 }
+
+
+	

@@ -5,67 +5,67 @@
 #include "testCases.hpp"
 
 
-namespace Insertionsort{
+namespace Mergesort{
 
-    TEST(Insertionsort_normal, AscInt){
+    TEST(Mergesort_bottomUp, AscInt){
 		std::array<int ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		bottomUp(a);
 		isSorted(a);
 	}
 	
-	TEST(Insertionsort_normal, DescInt){
+	TEST(Mergesort_bottomUp, DescInt){
 		std::array<int ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		bottomUp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomInt){
+	TEST(Mergesort_bottomUp, RandomInt){
 		std::array<int ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		bottomUp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, AscDouble){
+	TEST(Mergesort_bottomUp, AscDouble){
 		std::array<double ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		bottomUp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, DescDouble){
+	TEST(Mergesort_bottomUp, DescDouble){
 		std::array<double ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		bottomUp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomDouble){
+	TEST(Mergesort_bottomUp, RandomDouble){
 		std::array<double ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		bottomUp(a);
 		isSorted(a);
 	}
-	TEST(Insertionsort_normal, AscString){
+	TEST(Mergesort_bottomUp, AscString){
 		std::array<std::string ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		bottomUp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, DescString){
+	TEST(Mergesort_bottomUp, DescString){
 		std::array<std::string ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		bottomUp(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomString){
+	TEST(Mergesort_bottomUp, RandomString){
 		std::array<std::string ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		bottomUp(a);
 		isSorted(a);
 	}
     

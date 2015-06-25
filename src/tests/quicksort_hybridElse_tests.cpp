@@ -5,67 +5,67 @@
 #include "testCases.hpp"
 
 
-namespace Insertionsort{
+namespace Quicksort{
 
-    TEST(Insertionsort_normal, AscInt){
+    TEST(Quicksort_hybridElse, AscInt){
 		std::array<int ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		hybridElse(a);
 		isSorted(a);
 	}
 	
-	TEST(Insertionsort_normal, DescInt){
+	TEST(Quicksort_hybridElse, DescInt){
 		std::array<int ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		hybridElse(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomInt){
+	TEST(Quicksort_hybridElse, RandomInt){
 		std::array<int ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		hybridElse(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, AscDouble){
+	TEST(Quicksort_hybridElse, AscDouble){
 		std::array<double ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		hybridElse(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, DescDouble){
+	TEST(Quicksort_hybridElse, DescDouble){
 		std::array<double ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		hybridElse(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomDouble){
+	TEST(Quicksort_hybridElse, RandomDouble){
 		std::array<double ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		hybridElse(a);
 		isSorted(a);
 	}
-	TEST(Insertionsort_normal, AscString){
+	TEST(Quicksort_hybridElse, AscString){
 		std::array<std::string ,arraySize> a;
 		Dataset::ascArray(a);
-		normal(a);
+		hybridElse(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, DescString){
+	TEST(Quicksort_hybridElse, DescString){
 		std::array<std::string ,arraySize> a;
 		Dataset::descArray(a);
-		normal(a);
+		hybridElse(a);
 		isSorted(a);
 	}
 
-	TEST(Insertionsort_normal, RandomString){
+	TEST(Quicksort_hybridElse, RandomString){
 		std::array<std::string ,arraySize> a;
 		Dataset::randArray(a);
-		normal(a);
+		hybridElse(a);
 		isSorted(a);
 	}
     
