@@ -96,13 +96,13 @@ namespace Benchmark{
 	void writeDataToCSV(std::ostream& stream,benchmarkdata data,size_t iterations){
 		stream << "Array Size";
 		for(size_t i = 1; i <= iterations ; i++ ){
-			stream << "," << (10000 << (i-1));
+			stream << ";" << (10000 << (i-1));
 		}
 		stream << std::endl;
 		for(auto v : data){
 			stream << v.first;
 			for(auto time : v.second){
-				stream << "," << time.count();
+				stream << ";" << time.count();
 			}
 			stream << std::endl;
 		}

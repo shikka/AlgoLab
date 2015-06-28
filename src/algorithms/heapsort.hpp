@@ -2,12 +2,12 @@ namespace Heapsort {
  
 
   template <typename T>
-  void buildHeap (T* A, size_t n, size_t i){
+  void buildHeap (T* A, size_t n, size_t i, T temp){
 
-    T temp;           
+           
     size_t parent, child;
     
-    temp = A[i];           
+           
     parent = i;         
   
     // While two children
@@ -91,8 +91,10 @@ namespace Heapsort {
     T* A = a.data() -1;
     
     // Build Heap
-    for (size_t i=n>>1; i; i--)
-        buildHeap (A, n, i);
+    for (size_t i=n>>1; i; i--){
+        temp = A[i];
+        buildHeap (A, n, i, temp);
+    }
 
     //Sort
     while ( n > 1){
